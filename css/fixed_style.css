@@ -13,17 +13,16 @@ body {
     background-color: #FFF8F0;
 }
 
-.head-container {
-    display: flex;
-    flex-direction: row;
-}
-
 a {
     text-decoration: none;
 }
 
 li {
     list-style: none;
+}
+
+header input[type=checkbox] {
+    display: none;
 }
 
 footer {
@@ -33,6 +32,12 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+footer > p {
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
 }
 
 .navbar {
@@ -74,10 +79,6 @@ footer {
     padding: 5px 14px;
 }
 
-header input[type=checkbox] {
-    display: none;
-}
-
 .hamburger {
     display: none;
     font-size: 24px;
@@ -91,16 +92,7 @@ header input[type=checkbox] {
     height: 50px;
 }
 
-footer p {
-    max-width: 500px;
-    margin: 10px auto;
-    font-size: 14px;
-}
 
 .footer-nav .nav-bar .menu {
     justify-content: center;
-}
-
-footer iframe {
-    margin-top: 15px;
 }
