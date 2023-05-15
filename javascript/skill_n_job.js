@@ -3,7 +3,7 @@ const jobs = [
       title: "Industrial Designer/ UI,UX Designer",
       image: "../images/sales-representative.svg",
       details:
-        "Responsible for creating and developing the form, function, usability, and visual appeal of the product, taking into account factors such as ergonomics, materials, production processes, and manufacturing costs. ",
+        "Responsible for developing the visual appeal of the product, taking into account materials, production processes, and costs. ",
       descriptions: 
       "Key responsibilities:\n\
       - Creating sketches and renderings of the smartbin\n\

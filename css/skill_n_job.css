@@ -1,15 +1,16 @@
 body {
     background-color: #FFF8F0;
+    font-family:'Courier New', Courier, monospace;
 }
 
 
 /* Form styles */
 .registration-form {
-    font-family: "Rubik", sans-serif;
+    /* font-family: "Rubik", sans-serif; */
     text-align: center;
     background-color: #052a33;
     padding: 30px;
-    font-size: 20px;
+    font-size: 23px;
 }
 form {
     display: flex;
@@ -20,7 +21,7 @@ form {
     padding: 1rem;
     background-color: rgba(6, 75, 92, 0.6);
     border-radius: 10px;
-    font-family: "Rubik", sans-serif;
+    /* font-family: "Rubik", sans-serif; */
   }
   
 form label {
@@ -98,7 +99,8 @@ color: white;
 padding: 10px 20px;
 border: none;
 border-radius: 5px;
-font-size: 16px;
+font-size: 13px;
+font-family:'Courier New', Courier, monospace;
 cursor: pointer;
 transition: transform 0.5s ease;
 }
@@ -113,19 +115,19 @@ cursor: default;
 .hire-section {
     background-color: #bce293;
     padding: 20px;
-    font-family: "Rubik", sans-serif;
+    /* font-family: "Rubik", sans-serif; */
     text-align: center;
 }
   
 .hire-section h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(32, 5, 5);
     margin-bottom: 10px;
 }
   
 .hire-section p {
-    font-size: 15px;
+    font-size: 17px;
     color: #333;
 }
 
@@ -134,7 +136,7 @@ margin: 0px ;
 border-radius: 10px;
 background-color: rgba(245, 229, 229, 0.5);
 padding: 5px 20px 20px 5px;
-font-size: 19px;
+font-size: 15px;
 }
 
 ul {
@@ -151,7 +153,7 @@ margin-bottom: 10px;
 .jobs-list-container {
     max-width: 60%;
     margin: 20px auto;
-    font-family: "Rubik", sans-serif;
+    /* font-family: "Rubik", sans-serif; */
   }
   
 .jobs-list-container h2 {
@@ -228,7 +230,7 @@ margin-bottom: 10px;
     width: 100%;
     padding: 12px 24px;
     font-size: 18px;
-    font-family: "Rubik", sans-serif;
+    /* font-family: "Rubik", sans-serif; */
     box-sizing: border-box;
     border: 1px solid #333;
     border-radius: 8px;
