@@ -1,7 +1,7 @@
 const jobs = [
     {
       title: "Industrial Designer/ UI,UX Designer",
-      image: "images/sales-representative.svg",
+      image: "../images/sales-representative.svg",
       details:
         "Responsible for creating and developing the form, function, usability, and visual appeal of the product, taking into account factors such as ergonomics, materials, production processes, and manufacturing costs. ",
       descriptions: 
@@ -29,7 +29,7 @@ const jobs = [
   
     {
       title: "Hardware Engineer",
-      image: "images/marketing-manager.svg",
+      image: "../images/marketing-manager.svg",
       details:
         "Responsible for for designing, developing and maintaining hardware components.",
       descriptions: 
@@ -51,7 +51,7 @@ const jobs = [
     },
     {
         title: "Sr. Software Engineer (Data Analyst)",
-        image: "images/software-engineer.svg",
+        image: "../images/software-engineer.svg",
         details:
           "Responsible for designing, developing and maintaining software systems and applications.",
         descriptions:
@@ -75,7 +75,7 @@ const jobs = [
     
       {
         title: "Product Manager/ Marketing Specialist",
-        image: "images/product-manager.svg",
+        image: "../images/product-manager.svg",
         details:
           "Responsible for creating and executing marketing strategies to promote the project.",
         descriptions: 
