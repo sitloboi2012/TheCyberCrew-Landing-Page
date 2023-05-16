@@ -1,10 +1,10 @@
 const jobs = [
-    {
-      title: "Industrial Designer/ UI,UX Designer",
-      image: "../images/sales-representative.svg",
-      details:
-        "Responsible for developing the visual appeal of the product, taking into account materials, production processes, and costs. ",
-      descriptions: 
+  {
+    title: "Industrial Designer/ UI,UX Designer",
+    image: "../images/sales-representative.svg",
+    details:
+      "Responsible for developing the visual appeal of the product, taking into account materials, production processes, and costs. ",
+    descriptions:
       "Key responsibilities:\n\
       - Creating sketches and renderings of the smartbin\n\
       - Selecting materials and manufacturing processes that meet cost and quality requirements\n\
@@ -23,16 +23,16 @@ const jobs = [
       - Strong design skills and proficiency in design tools such as Sketch, Figma, CAD or Adobe Creative Suite.\n\
       - Experience with user research and usability testing.\n\
       - Excellent communication skills and the ability to present design concepts effectively.",
-      openPositions: "1",
-      link: "#",
-    },
-  
-    {
-      title: "Hardware Engineer",
-      image: "../images/marketing-manager.svg",
-      details:
-        "Responsible for for designing, developing and maintaining hardware components.",
-      descriptions: 
+    openPositions: "1",
+    link: "#",
+  },
+
+  {
+    title: "Hardware Engineer",
+    image: "../images/marketing-manager.svg",
+    details:
+      "Responsible for for designing, developing and maintaining hardware components.",
+    descriptions:
       "Key responsibilities:\n\
       - Designing, developing, prototyping and testing the smartbin's hardware components.\n\
       - Conduct feasibility studies, risk assessments, and cost-benefit analysis to support hardware design decisions.\n\
@@ -46,16 +46,16 @@ const jobs = [
       - Proficient in schematic capture and simulation tools, circuit design, and analysis\n\
       - Proficient in industry-standard software, such as Altium Designer and SPICE\n\
       - Expertise in programming languages such as C or Assembly. Should be able to perform testing and debugging of hardware systems and have knowledge of regulatory requirements for electronics.",
-        openPositions: "1",
-      link: "#",
-    },
-    {
-        title: "Sr. Software Engineer (Data Analyst)",
-        image: "../images/software-engineer.svg",
-        details:
-          "Responsible for designing, developing and maintaining software systems and applications.",
-        descriptions:
-        "Key responsibilities:\n\
+    openPositions: "1",
+    link: "#",
+  },
+  {
+    title: "Sr. Software Engineer (Data Analyst)",
+    image: "../images/software-engineer.svg",
+    details:
+      "Responsible for designing, developing and maintaining software systems and applications.",
+    descriptions:
+      "Key responsibilities:\n\
         Develop and maintain software that powers the smartbin:\n\
         >  Designing and implementing the data analytics component of the smart bin.\n\
         > Analyse data collected from the smartbin to provide insights into usage patterns and identify areas for improvement.\n\
@@ -69,17 +69,17 @@ const jobs = [
         Extensive programming skills in Python, Java, and R.\n\
         Knowledge of source control, software testing frameworks like Git, JIRA, and Jenkins, and software development tools and environments.\n\
         Solid experience with data analysis, computer vision and relevant technologies.",
-        openPositions: "1",
-        link: "#",
-      },
-    
-      {
-        title: "Product Manager/ Marketing Specialist",
-        image: "../images/product-manager.svg",
-        details:
-          "Responsible for creating and executing marketing strategies to promote the project.",
-        descriptions: 
-        "Key responsibilities:\n\
+    openPositions: "1",
+    link: "#",
+  },
+
+  {
+    title: "Product Manager/ Marketing Specialist",
+    image: "../images/product-manager.svg",
+    details:
+      "Responsible for creating and executing marketing strategies to promote the project.",
+    descriptions:
+      "Key responsibilities:\n\
         The Product Manager will be responsible for driving the product roadmap and ensuring that the smartbin meets the needs of the target market.\n\
         The Marketing Specialist will be responsible for creating and implementing a marketing strategy for the smart bin system. Identify target markets, develop messaging and branding, and execute marketing campaigns across various channels. Market research, rivalry strategy analysis, marketing collateral development, social media account management, and performance measurement are among the primary duties.\n\
         \n\
@@ -90,73 +90,73 @@ const jobs = [
         Ability to manage multiple stakeholders, prioritise tasks, and meet tight deadlines.\n\
         Strong analytical skills and capable of data-driven decision making.\n\
         Detail-oriented and organised.",
-        openPositions: "1",
-        link: "#",
-      }
-  ];
-  
-  const jobsHeading = document.querySelector(".jobs-list-container h2");
-  const jobsContainer = document.querySelector(".jobs-list-container .jobs");
-  const jobSearch = document.querySelector(".jobs-list-container .job-search");
-  
-  let searchTerm = "";
-  
-  if (jobs.length == 1) {
-    jobsHeading.innerHTML = `${jobs.length} Job`;
-  } else {
-    jobsHeading.innerHTML = `${jobs.length} Jobs`;
+    openPositions: "1",
+    link: "#",
   }
-  
+];
+
+const jobsHeading = document.querySelector(".jobs-list-container h2");
+const jobsContainer = document.querySelector(".jobs-list-container .jobs");
+const jobSearch = document.querySelector(".jobs-list-container .job-search");
+
+let searchTerm = "";
+
+if (jobs.length == 1) {
+  jobsHeading.innerHTML = `${jobs.length} Job`;
+} else {
+  jobsHeading.innerHTML = `${jobs.length} Jobs`;
+}
+
 const createJobListingCards = () => {
-jobsContainer.innerHTML = "";
+  jobsContainer.innerHTML = "";
 
-jobs.forEach((job) => {
+  jobs.forEach((job) => {
     if (job.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-    let jobCard = document.createElement("div");
-    jobCard.classList.add("job");
+      let jobCard = document.createElement("div");
+      jobCard.classList.add("job");
 
-    let image = document.createElement("img");
-    image.src = job.image;
+      let image = document.createElement("img");
+      image.src = job.image;
 
-    let title = document.createElement("h3");
-    title.innerHTML = job.title;
-    title.classList.add("job-title");
+      let title = document.createElement("h3");
+      title.innerHTML = job.title;
+      title.classList.add("job-title");
 
-    let details = document.createElement("div");
-    details.innerHTML = job.details;
-    details.classList.add("details");
+      let details = document.createElement("div");
+      details.innerHTML = job.details;
+      details.classList.add("details");
 
-    let detailsBtn = document.createElement("a");
-    detailsBtn.href = job.link;
-    detailsBtn.innerHTML = "More Details";
-    detailsBtn.classList.add("details-btn");
+      let detailsBtn = document.createElement("a");
+      detailsBtn.href = job.link;
+      detailsBtn.innerHTML = "More Details";
+      detailsBtn.classList.add("details-btn");
 
-    let openPositions = document.createElement("span");
-    openPositions.classList.add("open-positions");
+      let openPositions = document.createElement("span");
+      openPositions.classList.add("open-positions");
 
-    if (job.openPositions == 1) {
+      if (job.openPositions == 1) {
         openPositions.innerHTML = `${job.openPositions} open position`;
-    } else {
+      } else {
         openPositions.innerHTML = `${job.openPositions} open positions`;
-    }
+      }
 
-    jobCard.appendChild(image);
-    jobCard.appendChild(title);
-    jobCard.appendChild(details);
-    jobCard.appendChild(detailsBtn);
-    jobCard.appendChild(openPositions);
+      jobCard.appendChild(image);
+      jobCard.appendChild(title);
+      jobCard.appendChild(details);
+      jobCard.appendChild(detailsBtn);
+      jobCard.appendChild(openPositions);
 
-    jobsContainer.appendChild(jobCard);
+      jobsContainer.appendChild(jobCard);
     }
-});
-};
-  
-createJobListingCards();
-  
-jobSearch.addEventListener("input", (e) => {
-    searchTerm = e.target.value;
-    createJobListingCards();
   });
+};
+
+createJobListingCards();
+
+jobSearch.addEventListener("input", (e) => {
+  searchTerm = e.target.value;
+  createJobListingCards();
+});
 
 
 // Select all the "More Details" buttons and add an event listener to each one
@@ -198,7 +198,7 @@ detailsBtns.forEach((btn) => {
 
 
 
-  // Select all the "More Details" buttons and add an event listener to each one
+// Select all the "More Details" buttons and add an event listener to each one
 // const detailsBtns = document.querySelectorAll(".details-btn");
 
 detailsBtns.forEach((btn) => {
@@ -210,7 +210,7 @@ detailsBtns.forEach((btn) => {
     const job = jobs.find((j) => j.title === jobCard.querySelector(".job-title").textContent);
 
     // Display the additional job details in a modal or popup
-    alert(job.descriptions); // Replace this with your own code to display the information
+    //alert(job.descriptions); // Replace this with your own code to display the information
   });
 });
 
@@ -247,5 +247,4 @@ emailInput.addEventListener("input", () => {
 
 
 
-  
-  
+
