@@ -1,6 +1,6 @@
 body {
-    background-color: #FFF8F0;
-    font-family:'Courier New', Courier, monospace;
+  background-color: #FFF8F0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -16,6 +16,7 @@ body {
     font-size: 23px;
     height: 50vh;
 }
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -28,92 +29,93 @@ form {
     border-radius: 7px;
     /* font-family: "Rubik", sans-serif; */
   }
-  
+
 form label {
-    display: block;
-    margin: 0.5rem 0;
-  }
-  
+  display: block;
+  margin: 0.5rem 0;
+}
+
 form input[type="text"],
 form input[type="email"],
 form input[type="file"],
 form button[type="submit"] {
-width: 100%;
-padding: 0.5rem;
-font-size: 1rem;
-border: none;
-border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
 }
-  
+
 form input[type="file"] {
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 form button[type="submit"] {
-background-color: #5f323f;
-color: white;
-cursor: pointer;
-} */
+  background-color: #5f323f;
+  color: white;
+  cursor: pointer;
+}
 
-.registration-form {
-position: relative;
+*/ .registration-form {
+  position: relative;
 }
 
 .registration-form p {
-    color: rgb(168, 168, 89);
+  color: rgb(168, 168, 89);
 }
 
 #subbtn:disabled {
-opacity: 0.5;
-cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 
 #subbtn:not(:disabled) {
-background-color: #6b404d;
-color: white;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-transition: all 0.5s ease-in-out;
+  background-color: #6b404d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
 #subbtn:not(:disabled):hover {
-cursor: pointer;
-} 
-  
-  
+  cursor: pointer;
+}
+
+
 .registration-form form label {
-display: inline-block;
-width: 100px;
-margin-right: 10px;
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
 }
 
 .registration-form form input[type="email"] {
-display: inline-block;
-width: calc(100% - 110px);
-padding: 5px;
-border-radius: 5px;
-border: none;
-margin-right: 10px;
+  display: inline-block;
+  width: calc(100% - 110px);
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
 }
 
 .registration-form form input[type="submit"] {
-background-color: rgb(218, 159, 51);
-color: white;
-padding: 10px 20px;
-border: none;
-border-radius: 5px;
-font-size: 16px;
-cursor: pointer;
-transition: transform 0.5s ease;
+  background-color: rgb(218, 159, 51);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 .registration-form form input[type="submit"]:disabled {
-opacity: 0.5;
-background-color: #ce6b43;
-cursor: default;
-} 
+  opacity: 0.5;
+  background-color: #ce6b43;
+  cursor: default;
+}
 
 
 .hire-section {
@@ -121,36 +123,36 @@ background-color: #d8e4a6;
 padding: 20px;
 text-align: center;
 }
-  
+
 .hire-section h2 {
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(32, 5, 5);
-    margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(32, 5, 5);
+  margin-bottom: 10px;
 }
-  
+
 .hire-section p {
-    font-size: 15px;
-    color: #333;
+  font-size: 17px;
+  color: #333;
 }
 
 .hiring-description {
-margin: 0px ;
-border-radius: 10px;
-background-color: rgba(245, 229, 229, 0.5);
-padding: 5px 20px 20px 5px;
-font-size: 19px;
+  margin: 0px;
+  border-radius: 10px;
+  background-color: rgba(245, 229, 229, 0.5);
+  padding: 5px 20px 20px 5px;
+  font-size: 15px;
 }
 
 ul {
-list-style: disc;
-margin-left: 40px;
+  list-style: disc;
+  margin-left: 40px;
 }
 
 li {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-  
+
 
 
 .jobs-list-container {
@@ -164,10 +166,11 @@ margin-bottom: 10px;
     padding-left: 20px;
   }
 
+
 .jobs-list-container .jobs img {
-    width: 60px;
-  }
-  
+  width: 60px;
+}
+
 .jobs-list-container .job {
     box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
     padding: 24px;
@@ -178,11 +181,11 @@ margin-bottom: 10px;
     transition: all 400ms ease;
     background-color: rgba(183, 183, 211, 0.5);
   }
-  
+
 .jobs-list-container .job:hover {
-    transform: scale(1.03);
-  }
-  
+  transform: scale(1.03);
+}
+
 .jobs-list-container .open-positions {
     position: absolute;
     top: 45px;
@@ -209,22 +212,22 @@ margin-bottom: 10px;
   }
   
 .jobs-list-container .details-btn {
-    text-decoration: none;
-    border: 1px solid #023047;
-    color: #000;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 20px;
-    transition: all 400ms ease;
-    background-color: #ccce43;
-  }
-  
+  text-decoration: none;
+  border: 1px solid #023047;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+  transition: all 400ms ease;
+  background-color: #ccce43;
+}
+
 .jobs-list-container .details-btn:hover {
-    background: salmon;
-    color: #fff;
-  }
-  
+  background: salmon;
+  color: #fff;
+}
+
 .jobs-list-container .job-search {
     width: 100%;
     padding: 12px 24px;
@@ -241,19 +244,22 @@ margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 45px;
+
 }
+
 @media (max-width: 940px) {
-    .jobs-list-container .jobs {
-        grid-template-columns: 1fr 1fr;
+  .jobs-list-container .jobs {
+    grid-template-columns: 1fr 1fr;
   }
-  
-@media (max-width: 640px) {
+
+  @media (max-width: 640px) {
     .jobs-list-container .jobs {
       grid-template-columns: 1fr;
       max-width: 400px;
       margin: 0 auto;
     }
   }
+
 }
 
 
@@ -295,3 +301,4 @@ margin-bottom: 10px;
 }
 
   
+

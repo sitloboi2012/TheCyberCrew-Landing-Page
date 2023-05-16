@@ -69,17 +69,17 @@ const jobs = [
         Extensive programming skills in Python, Java, and R.\n\
         Knowledge of source control, software testing frameworks like Git, JIRA, and Jenkins, and software development tools and environments.\n\
         Solid experience with data analysis, computer vision and relevant technologies.",
-        openPositions: "1",
-        link: "#",
-      },
-    
-      {
-        title: "Product Manager/ Marketing Specialist",
-        image: "../images/product-manager.svg",
-        details:
-          "Responsible for creating and executing marketing strategies to promote the project.",
-        descriptions: 
-        "Key responsibilities:\n\
+    openPositions: "1",
+    link: "#",
+  },
+
+  {
+    title: "Product Manager/ Marketing Specialist",
+    image: "../images/product-manager.svg",
+    details:
+      "Responsible for creating and executing marketing strategies to promote the project.",
+    descriptions:
+      "Key responsibilities:\n\
         The Product Manager will be responsible for driving the product roadmap and ensuring that the smartbin meets the needs of the target market.\n\
         The Marketing Specialist will be responsible for creating and implementing a marketing strategy for the smart bin system. Identify target markets, develop messaging and branding, and execute marketing campaigns across various channels. Market research, rivalry strategy analysis, marketing collateral development, social media account management, and performance measurement are among the primary duties.\n\
         \n\
@@ -90,73 +90,73 @@ const jobs = [
         Ability to manage multiple stakeholders, prioritise tasks, and meet tight deadlines.\n\
         Strong analytical skills and capable of data-driven decision making.\n\
         Detail-oriented and organised.",
-        openPositions: "1",
-        link: "#",
-      }
-  ];
-  
-  const jobsHeading = document.querySelector(".jobs-list-container h2");
-  const jobsContainer = document.querySelector(".jobs-list-container .jobs");
-  const jobSearch = document.querySelector(".jobs-list-container .job-search");
-  
-  let searchTerm = "";
-  
-  if (jobs.length == 1) {
-    jobsHeading.innerHTML = `${jobs.length} Job`;
-  } else {
-    jobsHeading.innerHTML = `${jobs.length} Jobs`;
+    openPositions: "1",
+    link: "#",
   }
-  
+];
+
+const jobsHeading = document.querySelector(".jobs-list-container h2");
+const jobsContainer = document.querySelector(".jobs-list-container .jobs");
+const jobSearch = document.querySelector(".jobs-list-container .job-search");
+
+let searchTerm = "";
+
+if (jobs.length == 1) {
+  jobsHeading.innerHTML = `${jobs.length} Job`;
+} else {
+  jobsHeading.innerHTML = `${jobs.length} Jobs`;
+}
+
 const createJobListingCards = () => {
-jobsContainer.innerHTML = "";
+  jobsContainer.innerHTML = "";
 
-jobs.forEach((job) => {
+  jobs.forEach((job) => {
     if (job.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-    let jobCard = document.createElement("div");
-    jobCard.classList.add("job");
+      let jobCard = document.createElement("div");
+      jobCard.classList.add("job");
 
-    let image = document.createElement("img");
-    image.src = job.image;
+      let image = document.createElement("img");
+      image.src = job.image;
 
-    let title = document.createElement("h3");
-    title.innerHTML = job.title;
-    title.classList.add("job-title");
+      let title = document.createElement("h3");
+      title.innerHTML = job.title;
+      title.classList.add("job-title");
 
-    let details = document.createElement("div");
-    details.innerHTML = job.details;
-    details.classList.add("details");
+      let details = document.createElement("div");
+      details.innerHTML = job.details;
+      details.classList.add("details");
 
-    let detailsBtn = document.createElement("a");
-    detailsBtn.href = job.link;
-    detailsBtn.innerHTML = "More Details";
-    detailsBtn.classList.add("details-btn");
+      let detailsBtn = document.createElement("a");
+      detailsBtn.href = job.link;
+      detailsBtn.innerHTML = "More Details";
+      detailsBtn.classList.add("details-btn");
 
-    let openPositions = document.createElement("span");
-    openPositions.classList.add("open-positions");
+      let openPositions = document.createElement("span");
+      openPositions.classList.add("open-positions");
 
-    if (job.openPositions == 1) {
+      if (job.openPositions == 1) {
         openPositions.innerHTML = `${job.openPositions} open position`;
-    } else {
+      } else {
         openPositions.innerHTML = `${job.openPositions} open positions`;
-    }
+      }
 
-    jobCard.appendChild(image);
-    jobCard.appendChild(title);
-    jobCard.appendChild(details);
-    jobCard.appendChild(detailsBtn);
-    jobCard.appendChild(openPositions);
+      jobCard.appendChild(image);
+      jobCard.appendChild(title);
+      jobCard.appendChild(details);
+      jobCard.appendChild(detailsBtn);
+      jobCard.appendChild(openPositions);
 
-    jobsContainer.appendChild(jobCard);
+      jobsContainer.appendChild(jobCard);
     }
-});
-};
-  
-createJobListingCards();
-  
-jobSearch.addEventListener("input", (e) => {
-    searchTerm = e.target.value;
-    createJobListingCards();
   });
+};
+
+createJobListingCards();
+
+jobSearch.addEventListener("input", (e) => {
+  searchTerm = e.target.value;
+  createJobListingCards();
+});
 
 
 // Select all the "More Details" buttons and add an event listener to each one
@@ -198,6 +198,7 @@ detailsBtns.forEach((btn) => {
 
 "Create an alert pop up"
 
+
 // Select all the "More Details" buttons and add an event listener to each one
 // const detailsBtns = document.querySelectorAll(".details-btn");
 detailsBtns.forEach((btn) => {
@@ -212,12 +213,14 @@ detailsBtns.forEach((btn) => {
     const previousScrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
     // Display the additional job details in a modal or popup
+
     // alert(job.descriptions);
 
     // Scroll back to the previous position after closing the alert
     setTimeout(() => {
       window.scrollTo(0, previousScrollPosition);
     }, 0);
+
   });
 });
 
@@ -250,9 +253,3 @@ emailInput.addEventListener("input", () => {
     submitBtn.disabled = true;
   }
 });
-
-
-
-
-  
-  
