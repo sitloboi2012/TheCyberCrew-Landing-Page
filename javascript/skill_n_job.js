@@ -3,7 +3,7 @@ const jobs = [
       title: "Industrial Designer/ UI,UX Designer",
       image: "../images/sales-representative.svg",
       details:
-        "Responsible for creating and developing the form, function, usability, and visual appeal of the product, taking into account factors such as ergonomics, materials, production processes, and manufacturing costs. ",
+        "Responsible for the visual of the product, taking into account materials, processes, and costs. ",
       descriptions: 
       "Key responsibilities:\n\
       - Creating sketches and renderings of the smartbin\n\
@@ -28,25 +28,25 @@ const jobs = [
     },
   
     {
-      title: "Hardware Engineer",
+      title: "Hardware Engineer (Mechatronics)",
       image: "../images/marketing-manager.svg",
       details:
-        "Responsible for for designing, developing and maintaining hardware components.",
+        "Responsible for designing, developing and maintaining hardware components.",
       descriptions: 
-      "Key responsibilities:\n\
-      - Designing, developing, prototyping and testing the smartbin's hardware components.\n\
-      - Conduct feasibility studies, risk assessments, and cost-benefit analysis to support hardware design decisions.\n\
-      - Create and maintain the hardware design documents, specifications, and testing procedures.\n\
-      - Troubleshoot and debug hardware issues during development and production phases.\n\
-      - Follow current knowledge of the newest hardware technology and trends to maintain the project's market competitiveness.\n\
-      \n\
-      Qualifications:\n\
-      - Bachelor's degree in Electrical Engineering/ Mechatronics.\n\
-      - Competence in microcontroller programming and embedded systems (particularly sensors and actuators).\n\
-      - Proficient in schematic capture and simulation tools, circuit design, and analysis\n\
-      - Proficient in industry-standard software, such as Altium Designer and SPICE\n\
-      - Expertise in programming languages such as C or Assembly. Should be able to perform testing and debugging of hardware systems and have knowledge of regulatory requirements for electronics.",
-        openPositions: "1",
+      `Key responsibilities:
+      - Designing, developing, prototyping and testing the smartbin's hardware components.
+      - Conduct feasibility studies, risk assessments, and cost-benefit analysis to support hardware design decisions.
+      - Create and maintain the hardware design documents, specifications, and testing procedures.
+      - Troubleshoot and debug hardware issues during development and production phases.
+      - Follow current knowledge of the newest hardware technology and trends to maintain the project's market competitiveness.
+
+      Qualifications:
+      - Bachelor's degree in Electrical Engineering/ Mechatronics.
+      - Competence in microcontroller programming and embedded systems (particularly sensors and actuators).
+      - Proficient in schematic capture and simulation tools, circuit design, and analysis.
+      - Proficient in industry-standard software, such as Altium Designer and SPICE.
+      - Expertise in programming languages such as C or Assembly. Should be able to perform testing and debugging of hardware systems and have knowledge of regulatory requirements for electronics.`,
+      openPositions: "1",
       link: "#",
     },
     {
@@ -196,11 +196,10 @@ detailsBtns.forEach((btn) => {
 });
 
 
+"Create an alert pop up"
 
-
-  // Select all the "More Details" buttons and add an event listener to each one
+// Select all the "More Details" buttons and add an event listener to each one
 // const detailsBtns = document.querySelectorAll(".details-btn");
-
 detailsBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     // Get the job card container
@@ -209,11 +208,18 @@ detailsBtns.forEach((btn) => {
     // Get the job object corresponding to this job card
     const job = jobs.find((j) => j.title === jobCard.querySelector(".job-title").textContent);
 
+    // Store the current scroll position
+    const previousScrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
     // Display the additional job details in a modal or popup
-    alert(job.descriptions); // Replace this with your own code to display the information
+    // alert(job.descriptions);
+
+    // Scroll back to the previous position after closing the alert
+    setTimeout(() => {
+      window.scrollTo(0, previousScrollPosition);
+    }, 0);
   });
 });
-
 
 
 
@@ -244,6 +250,7 @@ emailInput.addEventListener("input", () => {
     submitBtn.disabled = true;
   }
 });
+
 
 
 
