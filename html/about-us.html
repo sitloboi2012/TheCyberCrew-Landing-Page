@@ -8,6 +8,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/fixed_style.css">
     <link rel="stylesheet" href="../css/about-us.css">
+    <script src="../javascript/about-us.js"></script>
 </head>
 
 <body>
@@ -28,34 +29,54 @@
         </nav>
     </header>
     <main>
-        <div class="main-container">
+        <div class="container">
             <h1>The Cyber Crew Group</h1>
-            <p>Pellentesque tempor sollicitudin lectus, vel feugiat lacus imperdiet at. Nullam eget tellus ipsum. Donec
-                vitae sem pulvinar, condimentum orci non, gravida eros. Vivamus sit amet metus nec risus sagittis
-                commodo. Donec vestibulum suscipit porta. Vivamus molestie urna sed lorem dapibus blandit. Donec
-                consequat nulla eu condimentum tristique. Nullam eget semper dui. Praesent ex mi, suscipit sed pharetra
-                ac, tristique non turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Integer nibh nulla, ultrices sit amet orci in, iaculis elementum nisl. Integer at rhoncus
-                tortor. Donec condimentum purus id risus bibendum pharetra. Sed interdum, velit dignissim cursus
-                fringilla, quam lacus consectetur urna, sed sagittis massa sem vitae sem.</p>
-            <p>Nulla ac gravida nunc, et imperdiet velit. In euismod est ipsum, et scelerisque est rutrum ac. Mauris
-                vitae porta nisl, in vehicula arcu. Praesent eget nisl sapien. Praesent molestie ultricies varius. Donec
-                nec finibus erat, vitae varius diam. Vestibulum elementum vel tellus consequat dapibus. Quisque neque
-                urna, venenatis congue pretium nec, egestas in tortor. Etiam vulputate lobortis massa, non sodales magna
-                iaculis at. Ut dolor nulla, tincidunt volutpat enim eget, vehicula placerat ipsum. Nunc consequat
-                volutpat faucibus. Aenean ut nunc at ante vulputate iaculis. In egestas, nibh sed condimentum vulputate,
-                ex augue varius leo, maximus auctor mi eros ac nibh.</p>
-            <div class="row">
-                <div class="column">
-                    <img src="../images/huy_vo.jpg" style="width:100%">
-                    <img src="../images/ha_nguyen.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="../images/joshua.jpg" style="width:100%">
-                    <img src="../images/tram_anh.jpg" style="width:100%">
-                </div>
-            </div>
+            <p>A minimalist and mnemonic team name came up with a view to making it simple to recall and connect to the
+                team's goals and core principles. We emphasise the value of teamwork in the cyber area, which
+                wonderfully conveys a sense of close-knit collaboration and camaraderie. Our attempts at preserving the
+                Earth's nature lie in our efforts to do a valuable and essential project that makes use of technical
+                "weapons" to address present-day issues in the real world.</p>
+            <ul class="image-gallery">
+                <li onclick="overlayShow()">
+                    <img src="../images/huy_vo.jpg" alt="huy-vo" />
+                    <div id="overlay" class="overlay">
+                        <span>Image title</span>
+                    </div>
+                </li>
+                <li onclick="overlayShow()">
+                    <img src="../images/ha_nguyen.jpg" alt="huy-vo"/>
+                    <div id="overlay" class="overlay">
+                        <a onclick="overlayHide()" id="close-button">Close</a>
+                        <h1>Order Information</h1>
+                        <span>I am a young, keen, and goal-driven IT freshman at RMIT Vietnam and a perennial
+                            technophile who was truly inspired by pioneers in the field. Recently, I was particularly
+                            drawn to Tuyen, a valedictorian in the SSET class of 2023, whose accomplishments and
+                            attributions in both his academic path and the world of technology have captured my
+                            imagination and made me find my true calling. Therefore, I aspire to follow in their
+                            footsteps, and my vocation is to become a skilled woman in STEM as a ML specialist/data
+                            scientist. I have always been an avid fan of mystery-unravelling, logic-based problems, and
+                            chess games. The love for these activities has helped me a lot in honing my analytical
+                            skills and logical thinking, which are quintessential for programmers. Aside from that, I am
+                            also a language-learning enthusiast. It somehow reflects my curiosity for new cultures and
+                            experiences, which I believe will be invaluable in my future career.</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="image-gallery">
+                <li onclick="overlayShow()">
+                    <img src="../images/joshua.jpg" alt="huy-vo" />
+                    <div id="overlay" class="overlay">
+                        <span>Image title</span>
+                    </div>
+                </li>
+                <li onclick="overlayShow()">
+                    <img src="../images/tram_anh.jpg" alt="huy-vo" />
+                    <div id="overlay" class="overlay">
+                        <h1>Order Information</h1>
+                        <span>Image title</span>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
     <footer>
