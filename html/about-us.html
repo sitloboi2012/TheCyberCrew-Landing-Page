@@ -14,14 +14,22 @@
 <body>
     <header>
         <nav class="navbar">
-            <h1>Smart Eco-Friendly Bin</h1>
+            <h1>WasteThaumaturge</h1>
             <ul class="nav-links">
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="about-us.html">Team Profile</a></li>
-                    <li><a href="project-desc.html">Project Description</a></li>
+                    <div class="dropdown">
+                        <li class="dropbtn"><a href="project-desc.html">Project Description</a>
+                            <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content">
+                            <li><a href="skill_n_job.html">Overview</a></li>
+                            <li><a href="group_reflect.html">Detail Description</a></li>
+                            <li><a href="skill_n_job.html">Tools</a></li>
+                        </div>
+                    </div>
                     <li><a href="skill_n_job.html">Skill And Job</a></li>
                     <li><a href="group_reflect.html">Group Reflection</a></li>
                 </div>
@@ -29,7 +37,7 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container" id="container">
             <h1>The Cyber Crew Group</h1>
             <p>A minimalist and mnemonic team name came up with a view to making it simple to recall and connect to the
                 team's goals and core principles. We emphasise the value of teamwork in the cyber area, which
@@ -37,46 +45,129 @@
                 Earth's nature lie in our efforts to do a valuable and essential project that makes use of technical
                 "weapons" to address present-day issues in the real world.</p>
             <ul class="image-gallery">
-                <li onclick="overlayShow()">
+                <li onclick="overlayShow_huyvo()">
                     <img src="../images/huy_vo.jpg" alt="huy-vo" />
-                    <div id="overlay" class="overlay">
-                        <span>Image title</span>
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Anh Huy Vo</p>
+                            <p>Student ID: S3823794</p>
+                        </div>
                     </div>
                 </li>
-                <li onclick="overlayShow()">
-                    <img src="../images/ha_nguyen.jpg" alt="huy-vo"/>
-                    <div id="overlay" class="overlay">
-                        <a onclick="overlayHide()" id="close-button">Close</a>
-                        <h1>Order Information</h1>
-                        <span>I am a young, keen, and goal-driven IT freshman at RMIT Vietnam and a perennial
-                            technophile who was truly inspired by pioneers in the field. Recently, I was particularly
-                            drawn to Tuyen, a valedictorian in the SSET class of 2023, whose accomplishments and
-                            attributions in both his academic path and the world of technology have captured my
-                            imagination and made me find my true calling. Therefore, I aspire to follow in their
-                            footsteps, and my vocation is to become a skilled woman in STEM as a ML specialist/data
-                            scientist. I have always been an avid fan of mystery-unravelling, logic-based problems, and
-                            chess games. The love for these activities has helped me a lot in honing my analytical
-                            skills and logical thinking, which are quintessential for programmers. Aside from that, I am
-                            also a language-learning enthusiast. It somehow reflects my curiosity for new cultures and
-                            experiences, which I believe will be invaluable in my future career.</span>
+                <li onclick="overlayShow_hanguyen()">
+                    <img src="../images/ha_nguyen.jpg" alt="huy-vo" />
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Trinh Nguyen Ha</p>
+                            <p>Student ID: S3981134</p>
+                        </div>
                     </div>
                 </li>
             </ul>
             <ul class="image-gallery">
-                <li onclick="overlayShow()">
+                <li onclick="overlayShow_joshua()">
                     <img src="../images/joshua.jpg" alt="huy-vo" />
-                    <div id="overlay" class="overlay">
-                        <span>Image title</span>
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Joshua Hansen</p>
+                            <p>Student ID: S3993563</p>
+                        </div>
                     </div>
                 </li>
-                <li onclick="overlayShow()">
+                <li onclick="overlayShow_tramanh()">
                     <img src="../images/tram_anh.jpg" alt="huy-vo" />
-                    <div id="overlay" class="overlay">
-                        <h1>Order Information</h1>
-                        <span>Image title</span>
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Lam Quang Tram Anh</p>
+                            <p>Student ID: S4023681</p>
+                        </div>
                     </div>
                 </li>
             </ul>
+        </div>
+
+        <div id="hanguyen-overlay" class="hanguyen-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_hanguyen()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Trinh Nguyen Ha</h1><br>
+                <p>There is only half a month left until I complete my first semester in the Information Technology (IT)
+                    major, and I have to admit that I have had so many wonderful memories as well as helpful knowledge,
+                    which is and will be the motivation and preparation for me to continue pursuing this major. In the
+                    past
+                    two months, I have not only listened to the lectures but also had the opportunity to meet and be
+                    inspired by IT professionals. From there, I could have a broader, more realistic point of view on IT
+                    and
+                    be able to orient my minor and my job in the future. After graduating, instead of continuing my
+                    academic
+                    path by venturing with a master's degree, I would prefer to seek an internship, do some personal
+                    projects, and apply for a full-time job.</p>
+            </div>
+        </div>
+
+        <div id="huyvo-overlay" class="huyvo-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_huyvo()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Vo Anh Huy</h1><br>
+                <p>There is only half a month left until I complete my first semester in the Information Technology (IT)
+                    major, and I have to admit that I have had so many wonderful memories as well as helpful knowledge,
+                    which is and will be the motivation and preparation for me to continue pursuing this major. In the
+                    past
+                    two months, I have not only listened to the lectures but also had the opportunity to meet and be
+                    inspired by IT professionals. From there, I could have a broader, more realistic point of view on IT
+                    and
+                    be able to orient my minor and my job in the future. After graduating, instead of continuing my
+                    academic
+                    path by venturing with a master's degree, I would prefer to seek an internship, do some personal
+                    projects, and apply for a full-time job.</p>
+            </div>
+        </div>
+
+        <div id="joshua-overlay" class="joshua-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_joshua()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Joshua Hansen</h1><br>
+                <p>There is only half a month left until I complete my first semester in the Information Technology (IT)
+                    major, and I have to admit that I have had so many wonderful memories as well as helpful knowledge,
+                    which is and will be the motivation and preparation for me to continue pursuing this major. In the
+                    past
+                    two months, I have not only listened to the lectures but also had the opportunity to meet and be
+                    inspired by IT professionals. From there, I could have a broader, more realistic point of view on IT
+                    and
+                    be able to orient my minor and my job in the future. After graduating, instead of continuing my
+                    academic
+                    path by venturing with a master's degree, I would prefer to seek an internship, do some personal
+                    projects, and apply for a full-time job.</p>
+            </div>
+        </div>
+
+        <div id="tramanh-overlay" class="tramanh-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_tramanh()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Lam Quang Tram Anh</h1><br>
+                <p>There is only half a month left until I complete my first semester in the Information Technology (IT)
+                    major, and I have to admit that I have had so many wonderful memories as well as helpful knowledge,
+                    which is and will be the motivation and preparation for me to continue pursuing this major. In the
+                    past
+                    two months, I have not only listened to the lectures but also had the opportunity to meet and be
+                    inspired by IT professionals. From there, I could have a broader, more realistic point of view on IT
+                    and
+                    be able to orient my minor and my job in the future. After graduating, instead of continuing my
+                    academic
+                    path by venturing with a master's degree, I would prefer to seek an internship, do some personal
+                    projects, and apply for a full-time job.</p>
+            </div>
         </div>
     </main>
     <footer>
