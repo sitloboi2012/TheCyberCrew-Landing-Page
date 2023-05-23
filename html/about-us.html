@@ -8,19 +8,28 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/fixed_style.css">
     <link rel="stylesheet" href="../css/about-us.css">
+    <script src="../javascript/about-us.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <h1>Smart Eco-Friendly Bin</h1>
+            <h1>WasteThaumaturge</h1>
             <ul class="nav-links">
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <div class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="about-us.html">Team Profile</a></li>
-                    <li><a href="project-desc.html">Project Description</a></li>
+                    <div class="dropdown">
+                        <li class="dropbtn"><a href="project-desc.html">Project Description</a>
+                            <i class="fa fa-caret-down"></i></li>
+                        <div class="dropdown-content">
+                            <li><a href="skill_n_job.html">Overview</a></li>
+                            <li><a href="group_reflect.html">Detail Description</a></li>
+                            <li><a href="skill_n_job.html">Tools</a></li>
+                        </div>
+                    </div>
                     <li><a href="skill_n_job.html">Skill And Job</a></li>
                     <li><a href="group_reflect.html">Group Reflection</a></li>
                 </div>
@@ -28,7 +37,7 @@
         </nav>
     </header>
     <main>
-        <div class="main-container">
+        <div class="container" id="container">
             <h1>The Cyber Crew Group</h1>
             <p>A minimalist and mnemonic team name came up with a view to making it simple to recall and connect to the
                 team's goals and core principles. We emphasise the value of teamwork in the cyber area, which
@@ -36,7 +45,9 @@
                 Earth's nature lie in our efforts to do a valuable and essential project that makes use of technical
                 "weapons" to address present-day issues in the real world.</p>
 
+
             <p style="text-align: center; font-size: 14px; color: brown;">Click on the pictures to get to know our members!</p>
+
 
             <ul class="image-gallery">
                 <li onclick="overlayShow_huyvo()">
@@ -87,6 +98,7 @@
             <div class="profile">
                 <h1>Student Profile</h1><br>
                 <h1>Trinh Nguyen Ha</h1><br>
+
                 <p>I am a young, keen, and goal-driven IT freshman at RMIT Vietnam and a perennial technophile who was truly inspired by pioneers in the field.
                     Recently, I was particularly drawn to Tuyen, a valedictorian in the SSET class of 2023, whose accomplishments and attributions in both his academic path and the world of technology have captured my imagination and made me find my true calling.
                     Therefore, I aspire to follow in their footsteps, and my vocation is to become a skilled woman in STEM as a ML specialist/data scientist.
@@ -94,6 +106,7 @@
                     The love for these activities has helped me a lot in honing my analytical skills and logical thinking, which are quintessential for programmers.
                     Aside from that, I am also a language-learning enthusiast. It somehow reflects my curiosity for new cultures and experiences, which I believe will be invaluable in my future career. 
                 </p>
+
             </div>
         </div>
 
@@ -104,11 +117,13 @@
             <div class="profile">
                 <h1>Student Profile</h1><br>
                 <h1>Vo Anh Huy</h1><br>
+
                 <p>As a person that is nearly finished with my degree, I am looking forward to any IT project that could help me contribute my knowledge as well as be passionate for the community.
                     While studying the bachelor of Information Technologies, all of the course has taught me lots of different skills that I could use for my real job in the future and especially helpful for my career path as well.
                     Even though I have been in the field of Data Science and Machine Learning for more than 3 years already, I am always passionate about contributing to not just the Machine Learning community but also the society as well through my knowledge and experience.
                     One of the reasons that I am interested in Assignment 3 is due to the fact that I can create something that is helpful not just only for a small community but it can be scalable and impact human normal daily life.
                 </p>
+
             </div>
         </div>
 
@@ -119,6 +134,7 @@
             <div class="profile">
                 <h1>Student Profile</h1><br>
                 <h1>Joshua Hansen</h1><br>
+
                 <p>Being close to finishing my undergraduate degree, I aspire to work and innovate in the space of IT in my future ventures.
                     With a bachelor in Information Studies, I will have a foundational knowledge of multiple areas within IT, especially the field of STS (science and technology studies).
                     After the summer I will continue my postgraduate degree in digital innovation & management and dive deeper in the field of IT innovations.
@@ -126,6 +142,7 @@
                     In my study abroad semester at RMIT Vietnam, I got a deep understanding of a foreign culture and local traditions both in leisure and academically.
                     I am sure that my experience abroad will support my future career and personal life. 
                 </p>
+
             </div>
         </div>
 
