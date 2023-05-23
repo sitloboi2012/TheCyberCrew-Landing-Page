@@ -30,31 +30,123 @@
     <main>
         <div class="main-container">
             <h1>The Cyber Crew Group</h1>
-            <p>Pellentesque tempor sollicitudin lectus, vel feugiat lacus imperdiet at. Nullam eget tellus ipsum. Donec
-                vitae sem pulvinar, condimentum orci non, gravida eros. Vivamus sit amet metus nec risus sagittis
-                commodo. Donec vestibulum suscipit porta. Vivamus molestie urna sed lorem dapibus blandit. Donec
-                consequat nulla eu condimentum tristique. Nullam eget semper dui. Praesent ex mi, suscipit sed pharetra
-                ac, tristique non turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Integer nibh nulla, ultrices sit amet orci in, iaculis elementum nisl. Integer at rhoncus
-                tortor. Donec condimentum purus id risus bibendum pharetra. Sed interdum, velit dignissim cursus
-                fringilla, quam lacus consectetur urna, sed sagittis massa sem vitae sem.</p>
-            <p>Nulla ac gravida nunc, et imperdiet velit. In euismod est ipsum, et scelerisque est rutrum ac. Mauris
-                vitae porta nisl, in vehicula arcu. Praesent eget nisl sapien. Praesent molestie ultricies varius. Donec
-                nec finibus erat, vitae varius diam. Vestibulum elementum vel tellus consequat dapibus. Quisque neque
-                urna, venenatis congue pretium nec, egestas in tortor. Etiam vulputate lobortis massa, non sodales magna
-                iaculis at. Ut dolor nulla, tincidunt volutpat enim eget, vehicula placerat ipsum. Nunc consequat
-                volutpat faucibus. Aenean ut nunc at ante vulputate iaculis. In egestas, nibh sed condimentum vulputate,
-                ex augue varius leo, maximus auctor mi eros ac nibh.</p>
-            <div class="row">
-                <div class="column">
-                    <img src="../images/huy_vo.jpg" style="width:100%">
-                    <img src="../images/ha_nguyen.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="../images/joshua.jpg" style="width:100%">
-                    <img src="../images/tram_anh.jpg" style="width:100%">
-                </div>
+            <p>A minimalist and mnemonic team name came up with a view to making it simple to recall and connect to the
+                team's goals and core principles. We emphasise the value of teamwork in the cyber area, which
+                wonderfully conveys a sense of close-knit collaboration and camaraderie. Our attempts at preserving the
+                Earth's nature lie in our efforts to do a valuable and essential project that makes use of technical
+                "weapons" to address present-day issues in the real world.</p>
+
+            <p style="text-align: center; font-size: 14px; color: brown;">Click on the pictures to get to know our members!</p>
+
+            <ul class="image-gallery">
+                <li onclick="overlayShow_huyvo()">
+                    <img src="../images/huy_vo.jpg" alt="huy-vo" />
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Anh Huy Vo</p>
+                            <p>Student ID: S3823794</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="overlayShow_hanguyen()">
+                    <img src="../images/ha_nguyen.jpg" alt="huy-vo" />
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Trinh Nguyen Ha</p>
+                            <p>Student ID: S3981134</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="image-gallery">
+                <li onclick="overlayShow_joshua()">
+                    <img src="../images/joshua.jpg" alt="huy-vo" />
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Joshua Hansen</p>
+                            <p>Student ID: S3993563</p>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="overlayShow_tramanh()">
+                    <img src="../images/tram_anh.jpg" alt="huy-vo" />
+                    <div class="overlay-info">
+                        <div class="text">
+                            <p>Studen Name: <br> Lam Quang Tram Anh</p>
+                            <p>Student ID: S4023681</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="hanguyen-overlay" class="hanguyen-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_hanguyen()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Trinh Nguyen Ha</h1><br>
+                <p>I am a young, keen, and goal-driven IT freshman at RMIT Vietnam and a perennial technophile who was truly inspired by pioneers in the field.
+                    Recently, I was particularly drawn to Tuyen, a valedictorian in the SSET class of 2023, whose accomplishments and attributions in both his academic path and the world of technology have captured my imagination and made me find my true calling.
+                    Therefore, I aspire to follow in their footsteps, and my vocation is to become a skilled woman in STEM as a ML specialist/data scientist.
+                    I have always been an avid fan of mystery-unravelling, logic-based problems, and chess games.
+                    The love for these activities has helped me a lot in honing my analytical skills and logical thinking, which are quintessential for programmers.
+                    Aside from that, I am also a language-learning enthusiast. It somehow reflects my curiosity for new cultures and experiences, which I believe will be invaluable in my future career. 
+                </p>
+            </div>
+        </div>
+
+        <div id="huyvo-overlay" class="huyvo-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_huyvo()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Vo Anh Huy</h1><br>
+                <p>As a person that is nearly finished with my degree, I am looking forward to any IT project that could help me contribute my knowledge as well as be passionate for the community.
+                    While studying the bachelor of Information Technologies, all of the course has taught me lots of different skills that I could use for my real job in the future and especially helpful for my career path as well.
+                    Even though I have been in the field of Data Science and Machine Learning for more than 3 years already, I am always passionate about contributing to not just the Machine Learning community but also the society as well through my knowledge and experience.
+                    One of the reasons that I am interested in Assignment 3 is due to the fact that I can create something that is helpful not just only for a small community but it can be scalable and impact human normal daily life.
+                </p>
+            </div>
+        </div>
+
+        <div id="joshua-overlay" class="joshua-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_joshua()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Joshua Hansen</h1><br>
+                <p>Being close to finishing my undergraduate degree, I aspire to work and innovate in the space of IT in my future ventures.
+                    With a bachelor in Information Studies, I will have a foundational knowledge of multiple areas within IT, especially the field of STS (science and technology studies).
+                    After the summer I will continue my postgraduate degree in digital innovation & management and dive deeper in the field of IT innovations.
+                    In my spare time I enjoy being an open, transparent and organised person, who thrives in leading and coordinating different projects.
+                    In my study abroad semester at RMIT Vietnam, I got a deep understanding of a foreign culture and local traditions both in leisure and academically.
+                    I am sure that my experience abroad will support my future career and personal life. 
+                </p>
+            </div>
+        </div>
+
+        <div id="tramanh-overlay" class="tramanh-overlay">
+            <div class="close-button">
+                <a onclick="overlayHide_tramanh()" id="close-button">X</a><br>
+            </div>
+            <div class="profile">
+                <h1>Student Profile</h1><br>
+                <h1>Lam Quang Tram Anh</h1><br>
+                <p>There is only half a month left until I complete my first semester in the Information Technology (IT)
+                    major, and I have to admit that I have had so many wonderful memories as well as helpful knowledge,
+                    which is and will be the motivation and preparation for me to continue pursuing this major. In the
+                    past
+                    two months, I have not only listened to the lectures but also had the opportunity to meet and be
+                    inspired by IT professionals. From there, I could have a broader, more realistic point of view on IT
+                    and
+                    be able to orient my minor and my job in the future. After graduating, instead of continuing my
+                    academic
+                    path by venturing with a master's degree, I would prefer to seek an internship, do some personal
+                    projects, and apply for a full-time job.</p>
             </div>
         </div>
     </main>
