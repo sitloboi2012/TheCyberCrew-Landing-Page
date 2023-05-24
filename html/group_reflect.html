@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gliker&display=swap">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/fixed_style.css">
-    <link rel="stylesheet" href="../css/group_ref.css">
+    <link rel="stylesheet" href="../css/group_reflect.css">
 </head>
 
 <body>
@@ -19,11 +19,20 @@
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
                 <div class="menu">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">Team Profile</a></li>
-                    <li><a href="project-desc.html">Project Description</a></li>
+                    <div class="dropdown">
+                        <li class="dropbtn"><a href="project-desc.html">Project Description</a>
+                            <i class="fa fa-caret-down"></i>
+                        </li>
+                        <div class="dropdown-content">
+                            <li><a href="project-desc.html">Overview</a></li>
+                            <li><a href="detail_desc.html">Detail Description</a></li>
+                            <li><a href="skill_n_job.html">Tools</a></li>
+                        </div>
+                    </div>
                     <li><a href="skill_n_job.html">Skill And Job</a></li>
-                    <li><a href="group_reflect.html">Group Reflection</a></li>
+                    <li class="active"><a href="group_reflect.html">Group Reflection</a></li>
                 </div>
             </ul>
         </nav>
@@ -83,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="summary">
+        <div id="summary">
             <h2>To sum up...</h2>
         </div>
     </main>

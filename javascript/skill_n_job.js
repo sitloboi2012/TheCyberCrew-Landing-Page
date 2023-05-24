@@ -80,16 +80,16 @@ const jobs = [
       "Responsible for creating and executing marketing strategies to promote the project.",
     descriptions:
       "Key responsibilities:\n\
-        The Product Manager will be responsible for driving the product roadmap and ensuring that the smartbin meets the needs of the target market.\n\
-        The Marketing Specialist will be responsible for creating and implementing a marketing strategy for the smart bin system. Identify target markets, develop messaging and branding, and execute marketing campaigns across various channels. Market research, rivalry strategy analysis, marketing collateral development, social media account management, and performance measurement are among the primary duties.\n\
-        \n\
-        Qualifications:\n\
-        Bachelor's degree in BA, Marketing, or similar subject.\n\
-        Proven product management, market research, and user experience design background, ideally in a tech startup or other busy setting.\n\
-        Familiarity with product lifecycle management and agile development approaches.\n\
-        Ability to manage multiple stakeholders, prioritise tasks, and meet tight deadlines.\n\
-        Strong analytical skills and capable of data-driven decision making.\n\
-        Detail-oriented and organised.",
+      The Product Manager will be responsible for driving the product roadmap and ensuring that the smartbin meets the needs of the target market.\n\
+      The Marketing Specialist will be responsible for creating and implementing a marketing strategy for the smart bin system. Identify target markets, develop messaging and branding, and execute marketing campaigns across various channels. Market research, rivalry strategy analysis, marketing collateral development, social media account management, and performance measurement are among the primary duties.\n\
+      \n\
+      Qualifications:\n\
+      Bachelor's degree in BA, Marketing, or similar subject.\n\
+      Proven product management, market research, and user experience design background, ideally in a tech startup or other busy setting.\n\
+      Familiarity with product lifecycle management and agile development approaches.\n\
+      Ability to manage multiple stakeholders, prioritise tasks, and meet tight deadlines.\n\
+      Strong analytical skills and capable of data-driven decision making.\n\
+      Detail-oriented and organised.",
     openPositions: "1",
     link: "#",
   }

@@ -211,6 +211,7 @@ li {
     flex: 1;
   }
   
+
 .jobs-list-container .details-btn {
   text-decoration: none;
   border: 1px solid #023047;
@@ -299,6 +300,3 @@ li {
   text-decoration: none;
   cursor: pointer;
 }
-
-  
-
